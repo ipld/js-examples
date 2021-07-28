@@ -1,10 +1,13 @@
 {
   "name": "example-dag-generate",
   "version": "1.0.0",
+  "type": "module",
   "description": "Examples for generating IPLD graphs in JavaScript",
   "main": "example-dag-generate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "types": "tsc --build",
+    "test": "npm run lint && npm run types && node example-dag-generate.js && node example-dag-generate.js inspect > test-actual-output && diff test-expected-output test-actual-output && rm test-actual-output"
   },
   "repository": {
     "type": "git",
@@ -15,13 +18,15 @@
   ],
   "author": "Rod <rod@vagg.org> (http://r.va.gg/)",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/rvagg/js-example-dag-generate/issues"
-  },
   "homepage": "https://github.com/rvagg/js-example-dag-generate#readme",
   "dependencies": {
-    "@ipld/block": "^2.1.4",
-    "cids": "^0.7.4",
-    "datastore-car": "^1.1.3"
+    "@ipld/car": "^3.1.8",
+    "@ipld/dag-cbor": "^6.0.6",
+    "@ipld/dag-json": "^7.0.5",
+    "multiformats": "^9.4.3"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "typescript": "^4.3.5"
   }
 }
