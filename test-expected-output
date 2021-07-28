@@ -1,0 +1,44 @@
+Roots: [ CID(bafyreidy42y5pmg7exj4qz7ibm7pcguiumiwstxumarpv2p44iefrgyh34) ]
+Block #1: (raw) bafkreif3kkcqsl7zobn26uehkbpxziomqoifem6dnd4o4d46mrenv7koly:
+Bytes<🌲 leaf node of raw bytes 🌴>
+Block #2: (raw) bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su:
+Bytes<🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌴🌴🌴🌴🌴🌴🌴🌴🌴>
+Block #3: (dag-cbor) bafyreidfp66zir2ipkhjsfrcz23xz563vz6hesycrmx5xvnywwbfaenhje:
+{
+  name: 'parent of some weird children',
+  children: [
+    CID(bafkreif3kkcqsl7zobn26uehkbpxziomqoifem6dnd4o4d46mrenv7koly),
+    CID(bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su)
+  ],
+  favouriteChild: CID(bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su)
+}
+Block #4: (dag-json) baguqeera3rbwpyzl2zmbpd6babxyuco26qcud3clxv2vqxj2turxie4sownq:
+[
+  CID(bafyreidfp66zir2ipkhjsfrcz23xz563vz6hesycrmx5xvnywwbfaenhje),
+  CID(bafkreif3kkcqsl7zobn26uehkbpxziomqoifem6dnd4o4d46mrenv7koly),
+  CID(bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su)
+]
+Block #5: (dag-cbor) bafyreidy42y5pmg7exj4qz7ibm7pcguiumiwstxumarpv2p44iefrgyh34:
+[
+  {
+    link: CID(bafyreidfp66zir2ipkhjsfrcz23xz563vz6hesycrmx5xvnywwbfaenhje),
+    name: 'parent'
+  },
+  {
+    link: CID(baguqeera3rbwpyzl2zmbpd6babxyuco26qcud3clxv2vqxj2turxie4sownq),
+    name: 'lister'
+  },
+  CID(QmV88khHDJEXi7wo6o972MZWY661R9PhrZW6dvpFP6jnMn)
+]
+Block #6: (dag-cbor) bafyreiareohfnlkhddnibmbw32klfciddn2xeknfrppco2yxufskbnaevm:
+{
+  data: CID(bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su),
+  endByte: 52,
+  startByte: 0
+}
+Block #7: (dag-cbor) bafyreiegfnlelo5hf2zvjkgc5bbfsdvihlpaeo74dwhswebqxzc2dtg56y:
+{
+  data: CID(bafkreicdli3usejv7idk6kvxmwbf7hkp66qn2biz5w7vut3kfvxmfxy5su),
+  endByte: 88,
+  startByte: 52
+}
