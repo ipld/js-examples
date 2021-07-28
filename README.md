@@ -1,4 +1,4 @@
-# ipld-example
+# JavaScript IPLD Examples
 
 **Basic examples of generating IPLD and consuming graphs in JavaScript**
 
