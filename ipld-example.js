@@ -1,8 +1,8 @@
 // `npm install` to set up
 //
-// run with `node example-dag-generate.js` to generate an `example.car` that contains a graph(ish)
+// run with `node ipld-example.js` to generate an `example.car` that contains a graph(ish)
 //
-// run with `node example-dag-generate.js inspect` to see what `example.car` contains
+// run with `node ipld-example.js inspect` to see what `example.car` contains
 //
 
 import fs from 'fs'
@@ -39,13 +39,13 @@ const utf8Decoder = new TextDecoder()
 
 // Main entry point
 if (process.argv[2] === 'inspect') {
-  // ran with `node example-dag-generate.js inspect`
+  // ran with `node ipld-example.js inspect`
   inspect().catch((err) => {
     console.error(err)
     process.exit(1)
   })
 } else {
-  // ran with `node example-dag-generate.js`
+  // ran with `node ipld-example.js`
   run().catch((err) => {
     console.error(err)
     process.exit(1)
