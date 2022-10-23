@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ipld/js-ipld-example#readme",
   "dependencies": {
     "@ipld/car": "^4.0.0",
-    "@ipld/dag-cbor": "^7.0.0",
+    "@ipld/dag-cbor": "^8.0.0",
     "@ipld/dag-json": "^9.0.0",
     "multiformats": "^10.0.0"
   },
