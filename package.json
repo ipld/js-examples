@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "standard": "^17.0.0",
-    "typescript": "^5.0.3"
+    "typescript": "^6.0.2"
   }
 }
